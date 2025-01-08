@@ -1,0 +1,92 @@
+1] Python program to check leap year
+
+# Taking input from the user
+year = int(input("Enter a year: "))
+
+# Check if the year is a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a Leap Year.")
+else:
+    print(year, "is not a Leap Year.")
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2] Python Program to Find the Largest Among Three Numbers
+
+# Take three numbers as input
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+number3 = float(input("Enter the third number: "))
+
+# Find the largest
+largest = max(number1, number2, number3)
+
+print(f"The largest number among {number1}, {number2}, and {number103} is {largest}.")
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+3]  Python Program to Check if a Number is Positive, Negative or 0 
+
+# Take a number as input
+number = float(input("Enter a number: "))
+
+# Check the sign of the number
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+4] Atoy vendor supplies three types of toys: Battery Based Toys, Key-basedToys, and Electrical Charging Based Toys. The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders of more than Rs. 100 for key-based toys, a discount of 5% is given, and a discount of 10% is given on orders for electrical charging base toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount.
+
+# Taking input from the user
+product_code = int(input("Enter the product code (1 for Battery Based, 2 for Key Based, 3 for Electrical Charging): "))
+order_amount = float(input("Enter the order amount in Rs.: "))
+
+# Initialize discount to 0
+discount = 0
+
+# Apply discount based on the product code and order amount
+if product_code == 1:  # Battery Based Toys
+    if order_amount > 1000:
+        discount = 0.10  # 10% discount
+elif product_code == 2:  # Key Based Toys
+    if order_amount > 100:
+        discount = 0.05  # 5% discount
+elif product_code == 3:  # Electrical Charging Based Toys
+    if order_amount > 500:
+        discount = 0.10  # 10% discount
+
+# Calculate the net amount after discount
+discounted_amount = order_amount * discount
+net_amount = order_amount - discounted_amount
+
+# Print the net amount to be paid after discount
+print(f"The net amount to be paid after discount is Rs. {net_amount:.2f}")
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+5] A transport company charges fare according to the following table:
+
+#| **Distance (in km)** | **Charges (per km)** |
+#|----------------------|----------------------|
+#| 1 - 50               | 8 Rs./km             |
+#| 51 - 100             | 10 Rs./km            |
+#| Above 100            | 12 Rs./km            |
+
+# Taking input from the user for distance
+distance = float(input("Enter the distance traveled in km: "))
+
+# Determine the charges per km based on the distance
+if distance >= 1 and distance <= 50:
+    fare = distance * 8  # 8 Rs per km for distances between 1 and 50 km
+elif distance > 50 and distance <= 100:
+    fare = distance * 10  # 10 Rs per km for distances between 51 and 100 km
+else:
+    fare = distance * 12  # 12 Rs per km for distances above 100 km
+
+# Display the calculated fare
+print(f"The fare for {distance} km is Rs. {fare:.2f}")
