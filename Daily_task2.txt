@@ -1,0 +1,53 @@
+1] Take one number form user and using ternary operators
+
+number = int(input("Enter a number: "))
+
+# Check if the number is even or odd using ternary operator
+result = "Even" if number % 2 == 0 else "Odd"
+
+print(f"The number {number} is {result}.")
+
+----------------------------------------------------------------------------------------------------------------
+2] Taking two number as input and swap them
+ 
+# Taking two numbers as input
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+
+# Swapping the values of num1 and num2
+number1, number2 = number2, number1
+
+# Printing the swapped values
+print("After swapping:")
+print("First number:", number1)
+print("Second number:", number102)
+
+-----------------------------------------------------------------------------------------------------------------
+3] WAP to convert kilometers to miles
+
+# Step 1: Ask the user to enter the distance in kilometers
+kilometers = float(input("Enter the distance in kilometers: "))
+
+# Step 2: Define the conversion factor from kilometers to miles
+# 1 kilometer is equal to 0.621371 miles
+km_to_miles = 0.621371
+
+# Step 3: Convert the distance from kilometers to miles
+miles = kilometers * km_to_miles
+
+# Step 4: Display the result to the user
+print("The distance of", kilometers, "kilometers is equal to", miles, "miles.")
+
+------------------------------------------------------------------------------------------------------------------
+4] Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+# Given values
+principal = 200  # Principal amount (Rs.)
+time = 5         # Time period (years)
+rate_of_interest = 5  # Interest rate (percentage)
+
+# Formula for Simple Interest
+simple_interest = (principal * rate_of_interest * time) / 100
+
+# Output the result
+print("Simple Interest is Rs.", simple_interest)
